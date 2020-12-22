@@ -15,18 +15,19 @@
 ### 트랜잭션
 
 - 주된 목적은 데이터를 안전하게 관리하기 위함이다.
-  -- 예를 들어 주문을 생성하고 -> 주문상세 1 -> 주문상세 2 의 순서로 데이터를 처리한다고 가장하자.
-  -- 생성된 주문 번호를 받아서 주문상세1 을 생성하는 도중 오류가 발생한다면 주문, 주문상세1 은 이미 생성되었고 주문 상세2는 생성되지 않는 식으로 유저가 원하는 주문정보와 다른 주문이 생기게 되며 DB 데이터에 큰 혼란을 야기할 수 있다.
-  -- 위와 같은 오류를 방지해주는 개념이 트랜잭션이다. 트랜잭션 안에서 모든 처리가 완성되면 _commit_ 을 하고, 오류가 생겼다면 _rollback_ 을 실행하여 트랜잭션이 발생하기 전과 같은 상태로 DB 를 되돌려줘야 한다.
+
+  - 예를 들어 주문을 생성하고 -> 주문상세 1 -> 주문상세 2 의 순서로 데이터를 처리한다고 가장하자.
+  - 생성된 주문 번호를 받아서 주문상세1 을 생성하는 도중 오류가 발생한다면 주문, 주문상세1 은 이미 생성되었고 주문 상세2는 생성되지 않는 식으로 유저가 원하는 주문정보와 다른 주문이 생기게 되며 DB 데이터에 큰 혼란을 야기할 수 있다.
+  - 위와 같은 오류를 방지해주는 개념이 트랜잭션이다. 트랜잭션 안에서 모든 처리가 완성되면 _commit_ 을 하고, 오류가 생겼다면 _rollback_ 을 실행하여 트랜잭션이 발생하기 전과 같은 상태로 DB 를 되돌려줘야 한다.
 
 - 트랜잭션을 관리하기 위해서는 auto commit 은 false 여야 한다. (pymysql은 디폴트 false 임)
 - 트랜잭션은 세션에 종속적이다.
 
 #### 세션이란?
 
-> A session represents the connection between an application and the relational database that stores its persistent objects.
-> A Unit of Work keeps track of everything you do during a business transaction that can affect the database. When you're done, it figures out everything that needs to be done to alter the database as a result of your work.
-> <br> > [what is a database session?](https://stackoverflow.com/questions/10521947/what-is-a-database-session)
+> A session represents the connection between an application and the relational database that stores its persistent objects.<br>
+> A Unit of Work keeps track of everything you do during a business transaction that can affect the database. When you're done, it figures out everything that needs to be done to alter the database as a result of your work <br>
+> 출저: [what is a database session?](https://stackoverflow.com/questions/10521947/what-is-a-database-session)
 
 - 트랜잭션은 row lock 과 table lock 을 유발할 수 있기 때문에 유의해서 사용해야 한다.
 - 쿼리로 트랜잭션 사용 가능! (MySQL)
