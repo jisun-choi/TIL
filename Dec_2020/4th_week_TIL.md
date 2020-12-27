@@ -40,3 +40,31 @@ ROLLBACK;
 COMMIT;
 // SQL statements
 ```
+
+## 2020.12.27 Sun ✏️
+
+### mysql 에러해결!
+
+진짜 갑.자.기 mysql 서버가 안켜지면서 아래와 같은 에러 메세지들이 출현(?)했다.
+일단 워크벤치로 당장 급한 과제들은 해결했고
+로컬 디비에 과제에 사용한 데이터들이 들어있어서 mysql을 지우고 재설치 하는 것도 옵션이 아니었다😢
+검색 끝에 이번에도 해결책은 갓스택오버플로우에서~~~!!!!
+뭔가 권한 문제 같았는데 정확한 원인은 미래의 내가 알아서 공부하겠지!
+
+[PID error on mysql.server start?](https://stackoverflow.com/questions/4444861/pid-error-on-mysql-server-start)
+
+> ERROR! The server quit without updating PID file (/usr/local/var/mysql/choejiseon-ui-MacBookPro.local.pid).
+> Starting MySQL
+> ..................................................................................................... ERROR! The server quit without updating PID file (/usr/local/var/mysql/>choejiseon-ui-MacBookPro.local.pid).
+
+![](/Users/choejiseon/Desktop/스크린샷 2020-12-27 오후 5.13.40.png)
+
+```
+choejiseon        8700   0.0  0.3  4974476  55636   ??  S    목04PM   2:10.28 /usr/local/Cellar/mysql/8.0.22_1/bin/mysqld --basedir=/usr/local/Cellar/mysql/8.0.22_1 --datadir=/usr/local/var/mysql --plugin-dir=/usr/local/Cellar/mysql/8.0.22_1/lib/plugin --log-error=choejiscBookPro.err --pid-file=/usr/local/var/mysql/choejiscBookPro.pid
+choejiseon        8588   0.0  0.0  4298612      8   ??  S    목04PM   0:00.02 /bin/sh /usr/local/Cellar/mysql/8.0.22_1/bin/mysqld_safe --datadir=/usr/local/var/mysql --pid-file=/usr/local/var/mysql/choejiscBookPro.pid
+choejiseon       53463   0.0  0.0  4295988    792 s004  S+    5:11PM   0:00.00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox mysql
+
+ps aux | grep mysql
+kill 8700
+kill 8588
+```
