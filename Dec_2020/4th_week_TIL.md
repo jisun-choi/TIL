@@ -45,11 +45,12 @@ COMMIT;
 
 ### mysql 에러해결!
 
-진짜 갑.자.기 mysql 서버가 안켜지면서 아래와 같은 에러 메세지들이 출현(?)했다.
-일단 워크벤치로 당장 급한 과제들은 해결했고
-로컬 디비에 과제에 사용한 데이터들이 들어있어서 mysql을 지우고 재설치 하는 것도 옵션이 아니었다😢
-검색 끝에 이번에도 해결책은 갓스택오버플로우에서~~~!!!!
-뭔가 권한 문제 같았는데 정확한 원인은 미래의 내가 알아서 공부하겠지!
+진짜 갑.자.기 mysql 서버가 안켜지면서 아래와 같은 에러 메세지들이 출현(?)했다.<br>
+일단 워크벤치로 당장 급한 과제들은 해결했고 <br>
+로컬 디비에 과제에 사용한 데이터들이 들어있어서 mysql을 지우고 재설치 하는 것도 옵션이 아니었다😢 <br>
+검색 끝에 이번에도 해결책은 갓스택오버플로우에서~~~!!!! <br>
+뭔가 권한 문제 같았는데 정확한 원인은 미래의 내가 알아서 공부하겠지! <br>
+빠른 시일내에 OS & 네트워크 공부 시작해야겠다. 자료구조도... 리눅스 명령어도... <br>
 
 [PID error on mysql.server start?](https://stackoverflow.com/questions/4444861/pid-error-on-mysql-server-start)
 
@@ -57,7 +58,7 @@ COMMIT;
 > Starting MySQL
 > ..................................................................................................... ERROR! The server quit without updating PID file (/usr/local/var/mysql/>choejiseon-ui-MacBookPro.local.pid).
 
-![](/Users/choejiseon/Desktop/스크린샷 2020-12-27 오후 5.13.40.png)
+### mysql 이 돌아가고 있는 프로세스 확인해서 물음표가 있는 것들을 없애줬다.
 
 ```
 choejiseon        8700   0.0  0.3  4974476  55636   ??  S    목04PM   2:10.28 /usr/local/Cellar/mysql/8.0.22_1/bin/mysqld --basedir=/usr/local/Cellar/mysql/8.0.22_1 --datadir=/usr/local/var/mysql --plugin-dir=/usr/local/Cellar/mysql/8.0.22_1/lib/plugin --log-error=choejiscBookPro.err --pid-file=/usr/local/var/mysql/choejiscBookPro.pid
