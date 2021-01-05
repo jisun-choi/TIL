@@ -12,4 +12,4 @@
 > | 사용가능 | date; datetime;time | datetime                      |
 > | 형식     | strftime(format)    | strptime(date_string, format) |
 
-공식문서 -> ![](https://docs.python.org/ko/3/library/datetime.html#strftime-strptime-behavior)
+공식문서 -> [datetime](https://docs.python.org/ko/3/library/datetime.html#strftime-strptime-behavior)
