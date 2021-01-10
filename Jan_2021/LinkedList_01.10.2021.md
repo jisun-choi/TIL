@@ -10,7 +10,7 @@
 
 ## Singly Linked List
 
-[Singlye Linked List](https://www.youtube.com/watch?v=XGSoQ0J5An4&list=PLzjoZGHG3J8vdUH75YPqmO7lbQl_M-xXo&index=1) 튜토리얼을 보고 직접 구현해 보았다.
+[Singly Linked List](https://www.youtube.com/watch?v=XGSoQ0J5An4&list=PLzjoZGHG3J8vdUH75YPqmO7lbQl_M-xXo&index=1) 튜토리얼을 보고 직접 구현해 보았다.
 
 ### 마지막에 새로운 node 추가
 
