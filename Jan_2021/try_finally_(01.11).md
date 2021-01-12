@@ -7,7 +7,7 @@ try & finally 구문의 실행 순서를 자세히 들여다본 적이 없었는
 - 만약 finally block 에서 return 이 된다면 try block 의 리턴은 실행되지 않는다.
 - finally block 에 리턴값이 없으면 다시 try block 으로 돌아가 리턴을 실행한다.
 
-```
+```python
 def check():
     try:
         print("try")
@@ -25,7 +25,7 @@ print(check())
 >> c # finally block 에서 리턴
 ```
 
-```
+```python
 def check():
     try:
         print("try")
