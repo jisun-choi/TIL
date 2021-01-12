@@ -20,7 +20,7 @@
 
 ![](https://images.velog.io/images/wltjs10645/post/80bb5fba-ef84-4526-a11f-3ca7a7a00186/image.png)
 
-```
+```python 
 # 노드 생성
 # 링크드 리스트 생성
 # 링크드 리스트에 노드 추가
@@ -82,7 +82,7 @@ linkedList.printList()
 3. 새로운 node 의 next 가 temp node 를 가르키도록 설정
    ![](https://images.velog.io/images/wltjs10645/post/a0310874-5ae3-4bae-b329-57a536cc3283/image.png)
 
-```
+```python 
 class Node:
   ...
 
@@ -119,7 +119,7 @@ linkedList.printList()
 5. new node = position1, 이전 position1 의 node = position2 가 됨
    ![](https://images.velog.io/images/wltjs10645/post/d9963ff2-c16a-4b8e-8c3e-9f0cda2b8c8b/image.png)
 
-```
+```python 
 class Node:
 	...
 
@@ -185,7 +185,7 @@ linkedList.printList()
 **\*\*** 아래의 코드에서 lastNode 변수는 주소 300에 대한 reference 일 뿐이다. 따라서 del lastNode 를 실행하면 그 주소에 대한 reference를 삭제하는 것이고 여전히 Kiwi 라는 데이터가 마지막에 출력된다.
 ![](https://images.velog.io/images/wltjs10645/post/f7f4768d-4678-4fdf-9075-9b0f46c9f95a/image.png)
 
-```
+```python 
 class Node:
     ...
 
@@ -218,7 +218,7 @@ linkedList.printList()
 3. 이전 node 의 next 에 현재 node 의 next 를 연결
 4. 현재 node 의 next 를 none 으로 변경
 
-```
+```python 
 class Node:
 	...
 
@@ -282,7 +282,7 @@ linkedList.printList()
 
 ![](https://images.velog.io/images/wltjs10645/post/d230b30c-6f56-4cf5-84d3-a2914d64f1dc/image.png)
 
-```
+```python 
 def mergedLists(firstList, secondList, mergeList):
     # 1 -> 3 -> 4 || 2 -> 7 -> 9
     currentFirst = firstList.head
