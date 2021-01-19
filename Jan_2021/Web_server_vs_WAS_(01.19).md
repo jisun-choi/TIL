@@ -22,6 +22,6 @@
 
 > 자원 이용의 효율성 및 장애 극복, 배포 및 유지보수의 편의성을 위해
 
-[10분 테코톡 티거의 Web server vs WAS](https://www.youtube.com/watch?v=F_vBAbjj4Pk)
-[희봉의 웹서버 vs WAS](https://www.youtube.com/watch?v=NyhbNtOq0Bc)
+[10분 테코톡 티거의 Web server vs WAS](https://www.youtube.com/watch?v=F_vBAbjj4Pk) <br>
+[희봉의 웹서버 vs WAS](https://www.youtube.com/watch?v=NyhbNtOq0Bc) <br>
 [Web Server와 WAS의 차이와 웹 서비스 구조](https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html)
