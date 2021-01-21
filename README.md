@@ -2,13 +2,13 @@
 Today I Learned
 
 ### 네트워크
-- [Web Server 와 WAS](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Web_server_vs_WAS_(01.19).md)
+- [Web Server & WAS](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Web_server_vs_WAS_(01.19).md)
 
 ### 자료구조
 - [Linked List](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Linked_List_(01.10).md)
 - [Linked List 와 Array 의 차이점](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Linked_List_vs_Array_(01.21).md)
 - [Tree](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Tree_(01.12).md)
-- [Stack과 Queue](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Stack_and_Queue_(01.20).md)
+- [Stack & Queue](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Stack_and_Queue_(01.20).md)
 
 ### 파이썬 
 - [strptime vs strftime](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/strptime_vs_strftime_(01.05).md)
