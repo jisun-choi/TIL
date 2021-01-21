@@ -1,6 +1,7 @@
 ## Stack
 
-- Last In, First Out(LIFO): 후입선출
+- Last In, First Out (LIFO): 후입선출
+- Implementations include a **linked list or array**
 - 스택은 top node 만 조작할 수 있고 각 노드들을 순회할 수 없다.
 - 스택은 미리 정해진 사이즈 만큼만 사용할 수 있다.
   - stack overflow: 스택의 모든 메모리가 꽉 차있어서 더이상 데이터를 삽입할 수 없을 때
@@ -208,4 +209,74 @@ class Stack:
       pointer = pointer.get_next_node()
     print_list.reverse()
     print("{0} Stack: {1}".format(self.get_name(), print_list))
+```
+
+## Queue
+
+- First In, First Out (FIFO): 선입선출
+- Implementations include a **linked list or array**
+- dequeue() 는 queue 의 첫번째 노드를 반환 (head node)
+- front & back of the queue (head & tail of the node) 만 조작할 수 있고 각 노드 순회는 불가능하다.
+- head, tail 노드에 접근해서 조작하기 때문에 두 노드의 reference 들을 알아야한다.
+- stack 과 마찬가지로 정해진 사이즈 만큼 사용할 수 있다 (bounded queue)
+  - queue overflow
+  - queue underflow
+
+#### Codecademy tutorial
+
+```python
+from node import Node
+
+class Queue:
+  def __init__(self, max_size=None):
+    self.head = None
+    self.tail = None
+    self.max_size = max_size
+    self.size = 0
+
+  def enqueue(self, value):
+    if self.has_space():
+      item_to_add = Node(value)
+      print("Adding " + str(item_to_add.get_value()) + " to the queue!")
+      if self.is_empty():
+        self.head = item_to_add
+        self.tail = item_to_add
+      else:
+        self.tail.set_next_node(item_to_add)
+        self.tail = item_to_add
+      self.size += 1
+    else:
+      print("Sorry, no more room!")
+
+  def dequeue(self):
+    if self.get_size() > 0:
+      item_to_remove = self.head
+      print(str(item_to_remove.get_value()) + " is served!")
+      if self.get_size() == 1:
+        self.head = None
+        self.tail = None
+      else:
+        self.head = self.head.get_next_node()
+      self.size -= 1
+      return item_to_remove.get_value()
+    else:
+      print("The queue is totally empty!")
+
+  def peek(self):
+    if self.size > 0:
+      return self.head.get_value()
+    else:
+      print("No orders waiting!")
+
+  def get_size(self):
+    return self.size
+
+  def has_space(self):
+    if self.max_size == None:
+      return True
+    else:
+      return self.max_size > self.get_size()
+
+  def is_empty(self):
+    return self.size == 0
 ```
