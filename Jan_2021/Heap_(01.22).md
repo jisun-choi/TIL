@@ -1,7 +1,7 @@
 ## Heap
 
 - 트리 구조로 생각하면 이해가 쉽지만 실질적으로 힙은 array 나 list 같은 자료구조로 구현하는 것이 효율성이 좋다.
-- 효울적으로 최대값, 최소값을 관리하고 싶을 때 유용한 자료구조이다.
+- 효율적으로 최대값, 최소값을 관리하고 싶을 때 유용한 자료구조이다.
 
 ### 최대 힙
 
@@ -9,8 +9,8 @@
 
 - root 는 최소 값을 가진다.
 - 모든 자식은 부모보다 큰 값을 가진다.
-- left child: (index _ 2) + 1
-  right child: (index _ 2) + 2
+- left child: (index _ 2) + 1 <br>
+  right child: (index _ 2) + 2 <br>
   parent: (index - 1) / 2 — not used on the root!
 
 #### Heapify up
