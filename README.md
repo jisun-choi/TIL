@@ -9,6 +9,7 @@ Today I Learned
 - [Linked List 와 Array 의 차이점](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Linked_List_vs_Array_(01.21).md)
 - [Tree](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Tree_(01.12).md)
 - [Stack & Queue](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Stack_and_Queue_(01.20).md)
+- [Heap](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Heap_(01.22).md)
 
 ### 파이썬 
 - [strptime vs strftime](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/strptime_vs_strftime_(01.05).md)
