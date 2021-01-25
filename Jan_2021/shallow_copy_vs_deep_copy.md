@@ -8,9 +8,9 @@
 
 ```python
 # 리스트 복사
->>> a = [1, 2, 3]
->>> b = a # shallow copy
->>> b[0]= 5
+a = [1, 2, 3]
+b = a # shallow copy
+b[0]= 5
 >>> a
 [5, 2, 3]
 >>> b
@@ -21,8 +21,8 @@
 4396179528
 
 # 리스트 슬라이싱 복사
->>> a = [1,2,3]
->>> b = a[:]
+a = [1,2,3]
+b = a[:]
 >>> id(a)
 4396179528
 >>> id(b)
@@ -31,17 +31,17 @@
 True
 >>> a is b
 False
->>> b[0] = 5
+b[0] = 5
 >>> a
 [1, 2, 3]
 >>> b
 [5, 2, 3]
 
 #copy 모듈
->>> import copy
->>> a = [[1,2],[3,4]]
->>> b = copy.copy(a)
->>> a[1].append(5)
+import copy
+a = [[1,2],[3,4]]
+b = copy.copy(a)
+a[1].append(5)
 >>> a
 [[1, 2], [3, 4, 5]]
 >>> b
@@ -51,10 +51,10 @@ False
 - 깊은 복사의 경우
 
 ```python
->>> import copy
->>> a = [[1,2],[3,4]]
->>> b = copy.deepcopy(a)
->>> a[1].append(5)
+import copy
+a = [[1,2],[3,4]]
+b = copy.deepcopy(a)
+a[1].append(5)
 >>> a
 [[1, 2], [3, 4, 5]]
 >>> b
@@ -62,5 +62,5 @@ False
 ```
 
 \*출처 <br>
-[얕은 복사(shallow copy)와 깊은 복사(deep copy)](https://wikidocs.net/16038)
+[얕은 복사(shallow copy)와 깊은 복사(deep copy)](https://wikidocs.net/16038) <br>
 [copy — 얕은 복사와 깊은 복사 연산](https://docs.python.org/ko/3/library/copy.html)
