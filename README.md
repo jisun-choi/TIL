@@ -15,6 +15,7 @@ Today I Learned
 - [strptime vs strftime](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/strptime_vs_strftime_(01.05).md)
 - [try_finally 의 실행순서](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/try_finally_(01.11).md)
 - [얕은 복사(Shallow Copy) vs 깊은 복사(Deep Copy)](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/shallow_copy_vs_deep_copy_(01.25).md)
+- [직렬화(Serialization)](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Serialization_(01.27).md)
 
 ### 인프라
 - [Docker](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Docker_(01.18).md)
