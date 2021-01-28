@@ -60,11 +60,15 @@ with open('./data/fruit.txt','rb') as f:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 참고: <br>
 [[python] serialize (직렬화)](https://itholic.github.io/python-serialize/) <br>
 [데이터 직렬화(serialization), 역직렬화(deserialization)는 무엇이고 왜 필요한가?](https://hub1234.tistory.com/26) <br>
 =======
 참고 -> <br>
+=======
+참고: <br>
+>>>>>>> c09fa76 (git rebase2)
 [[python] serialize (직렬화)](https://itholic.github.io/python-serialize/) <br>
 [데이터 직렬화(serialization), 역직렬화(deserialization)는 무엇이고 왜 필요한가?](https://hub1234.tistory.com/26)
 >>>>>>> 6916f80 (git rebase)
