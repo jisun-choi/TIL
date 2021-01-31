@@ -11,6 +11,9 @@ Today I Learned
 - [Stack & Queue](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Stack_and_Queue_(01.20).md)
 - [Heap](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Heap_(01.22).md)
 
+### 알고리즘
+- [파이썬 heapq 모듈](https://github.com/jisun-choi/TIL/blob/main/Feb_2021/heapq_(02.01).md)
+
 ### 파이썬 
 - [strptime vs strftime](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/strptime_vs_strftime_(01.05).md)
 - [try_finally 의 실행순서](https://github.com/jisun-choi/TIL/blob/main/Jan_2021/try_finally_(01.11).md)
