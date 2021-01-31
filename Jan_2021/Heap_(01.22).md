@@ -13,8 +13,8 @@
 
 - root 는 최소 값을 가진다. (오름차순 정렬)
 - 모든 자식은 부모보다 같거나 큰 값을 가진다.
-- left child: (index _ 2) + 1 <br>
-  right child: (index _ 2) + 2 <br>
+- left child: (index x 2) + 1 <br>
+  right child: (index x 2) + 2 <br>
   parent: (index - 1) / 2 — not used on the root!
 
 #### Heapify up
