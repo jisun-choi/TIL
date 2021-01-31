@@ -34,7 +34,7 @@ print(max_item)
 >>9
 ```
 
-### heap[0] & heapq.heappop(a) 의 성능차이
+### heap[0] & heapq.heappop(heap) 의 성능차이
 
 heap[0] 으로 알고리즘 문제 풀었다가 계속 런타임 에러가 나서 시간을 재보았다. <br>
 오..
