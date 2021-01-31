@@ -59,5 +59,7 @@ with open('./data/fruit.txt','rb') as f:
     data = json.load(f)
 ```
 
-참고 -> [[python] serialize (직렬화)](https://itholic.github.io/python-serialize/) <br>
-[데이터 직렬화(serialization), 역직렬화(deserialization)는 무엇이고 왜 필요한가?](https://hub1234.tistory.com/26)
+참고: <br>
+[[python] serialize (직렬화)](https://itholic.github.io/python-serialize/) <br>
+[데이터 직렬화(serialization), 역직렬화(deserialization)는 무엇이고 왜 필요한가?](https://hub1234.tistory.com/26) <br>
+
