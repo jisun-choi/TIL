@@ -34,5 +34,30 @@ print(max_item)
 >>9
 ```
 
+### heap[0] & heapq.heappop(a) 의 성능차이
+
+heap[0] 으로 알고리즘 문제 풀었다가 계속 런타임 에러가 나서 시간을 재보았다. <br>
+오..
+
+```python
+import timeit, heapq
+
+a = [1, 3, 5, 7, 9]
+heapq.heapify(a)
+
+start = timeit.default_timer()
+a[0]
+end = timeit.default_timer()
+
+print(end - start)
+>>9.449999999987246e-07
+
+start = timeit.default_timer()
+heapq.heappop(a)
+end = timeit.default_timer()
+print(end - start)
+>>1.9889999999973818e-06
+```
+
 출처: <br>
 [[Python] 힙 자료구조 / 힙큐(heapq) / 파이썬에서 heapq 모듈 사용하기](https://littlefoxdiary.tistory.com/3)
