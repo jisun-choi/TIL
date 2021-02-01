@@ -3,8 +3,8 @@
 heapq 모듈은 리스트를 **최소 힙** 형태로 정렬해준다.
 
 - `heapq.heapify(list)` : 리스트를 heap 으로 변환. 시간 복잡도 O(n)
-- `heapq.heappush(heap, item)`: heap 에서 가장 작은 원소 pop (=heap[0])
-- `heapq.heappop(heap)`
+- `heapq.heappush(heap, item)`
+- `heapq.heappop(heap)`: heap 에서 가장 작은 원소 pop (=heap[0])
 
 ```python
 import heapq
