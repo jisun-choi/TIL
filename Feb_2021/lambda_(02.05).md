@@ -2,7 +2,7 @@
 
 함수형 프로그래밍의 람다 표현식은 람다 대수에 근간을 두고 있다. **추상화**를 통해 함수를 구성하는 것이 주요 아이디어 인데 여기서 추상화란 예를 들어 '한 잔에 3000원인 커피 2잔을 사려면?' 이라는 문제를 풀기 위해 '가격 x 개수' 라는 식을 만들어 내는 것이다.
 
-> The λ-calculus is, at heart, a simple notation for functions and application. The main ideas are applying a function to an argument and forming functions by abstraction <br> > [The Lambda Calculus](https://plato.stanford.edu/entries/lambda-calculus/)
+> The λ-calculus is, at heart, a simple notation for functions and application. The main ideas are applying a function to an argument and forming functions by abstraction. <br> > [The Lambda Calculus](https://plato.stanford.edu/entries/lambda-calculus/)
 
 ### 익명 함수
 
@@ -13,12 +13,11 @@
 
 > To be precise the lambda keyword (reserved word) in Python evaluates an expression into a function reference. It’s a special (syntactic) form in the language.
 >
-> A lambda function or expression is an anonymous block of code or program functionality. It acts like a function, takes arguments and returns values ... but it is not bound to any name or identifier which is visible to the programmer.
-> [What is lambda function in Python and why do we need it?](https://www.quora.com/What-is-lambda-function-in-Python-and-why-do-we-need-it)
+> A lambda function or expression is an anonymous block of code or program functionality. It acts like a function, takes arguments and returns values ... but it is not bound to any name or identifier which is visible to the programmer. <br> > [What is lambda function in Python and why do we need it?](https://www.quora.com/What-is-lambda-function-in-Python-and-why-do-we-need-it)
 
 ### Python 의 lambda expression
 
-[5 Uses of Lambda Functions in Python](https://medium.com/techtofreedom/5-uses-of-lambda-functions-in-python-97c7c1a87244)
+[5 Uses of Lambda Functions in Python](https://medium.com/techtofreedom/5-uses-of-lambda-functions-in-python-97c7c1a87244) 를 참조하여 학습한 내용!
 
 `lambda arguments : expression`
 
