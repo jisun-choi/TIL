@@ -25,7 +25,7 @@
 - arguments: 함수가 받을 인자
 - expression: 함수의 리턴값
 
-1. Simple use
+**1. Simple use**
 
 ```python
 #lambda expression
@@ -40,8 +40,8 @@ print(add(2))
 >> 3
 ```
 
-2. with High order functions
-   `e.g. map(), filter(), reduce()`
+**2. with High order functions**
+`e.g. map(), filter(), reduce()`
 
 ```python
 numbers = [1,2,3,4,5,6,7,8,9,10]
@@ -52,8 +52,8 @@ print(list(filter(lambda x: x % 2 == 1, numbers)))
 c.f. list comprehension 으로도 표현 가능! <br>
 `odd_numbers = [i for i in numbers if i % 2 == 1]`
 
-3. 'Key' 인자로 활용
-   sort(), sorted() 메소드로 iteralble 을 정렬할 때 key 인자를 기준으로 이터러블을 정렬하게 된다.
+**3. 'Key' 인자로 활용**
+sort(), sorted() 메소드로 iteralble 을 정렬할 때 key 인자를 기준으로 이터러블을 정렬하게 된다.
 
 ```python
 leaders = ["Warren Buffett", "Yang Zhou", "Tim Cook", "Elon Musk"]
@@ -72,7 +72,7 @@ print(leaders)
 >> {1: 'Warren Buffett', 2: 'Elon Musk', 3: 'Tim Cook', 4: 'Yang Zhou'}
 ```
 
-4. Closure 로 활용
+**4. Closure 로 활용**
 
 ```python
 #normal nested function
