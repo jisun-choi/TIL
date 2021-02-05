@@ -29,10 +29,12 @@
 1. Simple use
 
 ```python
+#lambda expression
 lambda_add = lambda x: x + 1
 print(lambda_add(2))
 >> 3
 
+#normal function
 def add(x):
   return x+1
 print(add(2))
@@ -48,7 +50,7 @@ print(list(filter(lambda x: x % 2 == 1, numbers)))
 >> [1, 3, 5, 7, 9]
 ```
 
-c.f. list comprehension 으로도 표현 가능!
+c.f. list comprehension 으로도 표현 가능! <br>
 `odd_numbers = [i for i in numbers if i % 2 == 1]`
 
 3. 'Key' 인자로 활용
@@ -57,23 +59,24 @@ c.f. list comprehension 으로도 표현 가능!
 ```python
 leaders = ["Warren Buffett", "Yang Zhou", "Tim Cook", "Elon Musk"]
 print(leaders)
-# ['Warren Buffett', 'Yang Zhou', 'Tim Cook', 'Elon Musk']
+>> ['Warren Buffett', 'Yang Zhou', 'Tim Cook', 'Elon Musk']
 leaders.sort(key=lambda x: len(x))
 print(leaders)
-# ['Tim Cook', 'Yang Zhou', 'Elon Musk', 'Warren Buffett']
+>> ['Tim Cook', 'Yang Zhou', 'Elon Musk', 'Warren Buffett']
 
 # 딕셔너리 sorting
 leaders = {4: "Yang Zhou", 2: "Elon Musk", 3: "Tim Cook", 1: "Warren Buffett"}
 print(leaders)
-# {4: 'Yang Zhou', 2: 'Elon Musk', 3: 'Tim Cook', 1: 'Warren Buffett'}
+>> {4: 'Yang Zhou', 2: 'Elon Musk', 3: 'Tim Cook', 1: 'Warren Buffett'}
 leaders = dict(sorted(leaders.items(), key=lambda x: x[0]))
 print(leaders)
-# {1: 'Warren Buffett', 2: 'Elon Musk', 3: 'Tim Cook', 4: 'Yang Zhou'}
+>> {1: 'Warren Buffett', 2: 'Elon Musk', 3: 'Tim Cook', 4: 'Yang Zhou'}
 ```
 
 4. Closure 로 활용
 
 ```python
+#normal nested function
 def outer_func():
     developer = "jisun"
     def print_developer(location=""):
@@ -84,7 +87,7 @@ dev = outer_func()("SEOUL")
 print(dev)
 >> "jisun in SEOUL"
 
-# 람다 활용
+#lambda expression
 def outer_func():
   developer = "jisun"
   return lambda location="": developer + " in " + location
