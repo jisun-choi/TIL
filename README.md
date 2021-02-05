@@ -25,6 +25,7 @@ Today I Learned
 - [얕은 복사(Shallow Copy) vs 깊은 복사(Deep Copy)](<https://github.com/jisun-choi/TIL/blob/main/Jan_2021/shallow_copy_vs_deep_copy_(01.25).md>)
 - [직렬화(Serialization)](<https://github.com/jisun-choi/TIL/blob/main/Jan_2021/Serialization_(01.27).md>)
 - [lambda expression](<https://github.com/jisun-choi/TIL/blob/main/Feb_2021/lambda_(02.05).md>)
+- [underscore in python](https://github.com/jisun-choi/TIL/blob/main/Feb_2021/underscore_in_python_(02.05).md)
 
 ### 인프라
 
