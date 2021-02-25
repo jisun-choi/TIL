@@ -34,6 +34,7 @@ Today I Learned
 ### 데이터베이스
 
 - [JOIN](https://github.com/jisun-choi/TIL/blob/main/Dec_2020/JOIN_12.31.2020_Thu.md)
+- [INDEX](https://github.com/jisun-choi/TIL/blob/main/Feb_2021/Index_(02.25).md)
 
 ### ETC
 - [GIT: Reset vs. Revert](https://github.com/jisun-choi/TIL/blob/main/Feb_2021/GIT_history_(02.17).md)
